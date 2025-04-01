@@ -1,23 +1,63 @@
-# D&D Scroll Organizer 🏰📜
+Here's a concise **GitHub-optimized** `README.md` focused on developers:
 
-*A magical tool to automatically organize and rename documents based on their content*
+```markdown
+# DocOrganizer
 
-![Demo GIF](https://i.imgur.com/your-demo-gif-here.gif)
+[![Python 3.13+](https://img.shields.io/badge/python-3.13%2B-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-## Features ✨
-- **Content-Aware Sorting**: Automatically categorizes documents into folders
-- **Smart Renaming**: Extracts titles, recipients, and dates from documents
-- **Universal Format Support**: Works with:
-  - 📄 PDFs (text and scanned)
-  - 📝 Word documents (.docx)
-  - 🖼️ Images (JPEG, PNG, etc.)
-  - ✏️ Text files
-- **Portable Mode**: No admin rights required
+Automated document categorization and renaming using OCR and content analysis.
 
-## Installation 🔧
+## Features
+- 📂 Content-based file organization
+- ✨ Automatic metadata extraction (titles, recipients, dates)
+- 🖼️ Supports PDFs, Word docs, images, and text files
+- 🚀 Optional GUI or CLI interface
 
-### Quick Start (Windows)
-1. Download the installer bundle
-2. Run:
-   ```bat
-   install_portable_python.bat
+## Quick Start
+```bash
+# Install (Windows)
+install_portable_python.bat
+
+# Run GUI
+python dnd_organizer_gui.py
+
+# Or CLI
+python organizer.py --source ./input --destination ./sorted
+```
+
+## Developer Setup
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Configure Tesseract path in `organizer.py` if needed
+
+## Key Files
+| File | Purpose |
+|------|---------|
+| `organizer.py` | Core sorting logic |
+| `dnd_organizer_gui.py` | Optional Tkinter GUI |
+| `installer.py` | Dependency installer |
+| `install_portable_python.bat` | Portable setup script |
+
+## Customization
+Override default settings in `organizer.py`:
+```python
+SETTINGS = {
+    "categories": {
+        "Legal": ["contract", "nda"],
+        "Financial": ["invoice", "receipt"]
+    }
+}
+```
+
+## Contributing
+PRs welcome! Please:
+1. Keep the portable installer working
+2. Maintain backward compatibility
+3. Add tests for new features
+
+---
+*"Finally tamed my document chaos!"* - Happy User
+```
