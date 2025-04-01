@@ -12,7 +12,6 @@
   - 📝 Word documents (.docx)
   - 🖼️ Images (JPEG, PNG, etc.)
   - ✏️ Text files
-- **Military Document Optimized**: Special handling for EPRs, performance reports, etc.
 - **Portable Mode**: No admin rights required
 
 ## Installation 🔧
